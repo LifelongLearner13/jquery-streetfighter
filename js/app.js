@@ -15,11 +15,11 @@ $(document).ready(function() {
 		$(".ryu-throwing").show();
 		$(".hadouken").finish().show()
 		.animate(
-			{'left': '1452px'},
+			{'left': '1232px'},
 			750, 
 			function() {
 				$(this).hide();
-				$(this).css('left', '602px');
+				$(this).css('left', '470px');
 			}
 		);
 	})
@@ -59,11 +59,11 @@ $(document).ready(function() {
 		$(".ryu-throwing-angry").show();
 		$(".hadouken-angry").finish().show()
 		.animate(
-			{'right': '1367px'},
+			{'right': '1317px'},
 			750, 
 			function() {
 				$(this).hide();
-				$(this).css('right', '517px');
+				$(this).css('right', '560px');
 			}
 		);
 	})
