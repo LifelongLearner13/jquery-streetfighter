@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="en
+<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Streetfighter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 	<div class="main">
 		<div class="ryu">
@@ -15,12 +18,23 @@
 			<div class="ryu-character ryu-throwing"></div>
 			<div class="ryu-character ryu-cool"></div>
 		</div>
+
 		<div class="hadouken"></div>
 
 		<div class="explanation">
 			<h2>Mouse hover for ready pose (Click to fire)</h2>
-			<h2>Press "x" for cool pose</h2>
+			<h2>Keydown for cool pose</h2>
+			<h3><span id="normal-pose">&#8592; "X"</span> <span id="angry-pose">"Z" &#8594;</span></h3>
 		</div>
+
+		<div class="ryu-angry">
+			<div class="ryu-character-angry ryu-still-angry"></div>
+			<div class="ryu-character-angry ryu-ready-angry"></div>
+			<div class="ryu-character-angry ryu-throwing-angry"></div>
+			<div class="ryu-character-angry ryu-cool-angry"></div>
+		</div>
+
+		<div class="hadouken-angry"></div>
 	</div>
 	
 	<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
@@ -28,4 +42,5 @@
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
+
 </html>

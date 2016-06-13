@@ -5,58 +5,82 @@ body {
 .main {
 	background-color: white;
 	margin-top: 110px;
-	padding-left: 100px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
-	z-index: 1; /* Is this redundent? */
+	z-index: 1;
 }
 
-.ryu {
+.ryu, .ryu-angry {
 	width: 659px;
 	height: 494px;
 	display: inline-block;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.ryu-angry {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+	filter: hue-rotate(90deg);
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-still-angry, .ryu-throwing-angry, .ryu-cool-angry {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-throwing-angry, .ryu-cool-angry {
 	display: none;
 }
 
-.ryu-ready {
+.ryu-ready, .ryu-ready-angry {
 	background-image: url("../images/ryu-ready-position.gif");
 }
 
-.ryu-still {
+.ryu-still, .ryu-still-angry {
 	background-image: url("../images/ryu-standing-still.png");
 }
 
-.ryu-throwing {
+.ryu-throwing, .ryu-throwing-angry {
 	background-image: url("../images/ryu-throwing-hadouken.png");
 }
 
-.ryu-cool {
+.ryu-cool, .ryu-cool-angry{
 	background-image: url("../images/ryu-cool.gif");
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .hadouken {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-still-angry, .ryu-throwing-angry, .ryu-cool-angry, .hadouken {
 	background-repeat: no-repeat;
 }
 
-.hadouken {
+.hadouken, .hadouken-angry {
 	background-image: url("../images/hadouken.gif");
 	width: 156px;
 	height: 90px;
 	display: none;
 	top: 164px;
-    left: 602px;
-	float: left;
 	position: absolute;
 	z-index: 10;
+}
+
+.hadouken {
+	left: 602px;
+	float: left;
+}
+
+.hadouken-angry {
+	right: 517px;
+	float: right;
+	filter: hue-rotate(90deg);
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 .explanation {
@@ -64,6 +88,30 @@ body {
     display: inline-block;
     vertical-align: top;
     margin-top: 100px;
-    font-family: 'shadow into light';
+    font-family: 'shadows into light';
+}
+
+.explanation h2 {
+	text-align: center;
+}
+
+.explanation h3 {
+	font-size: 2rem;
+}
+
+#angry-pose {
+	float: right;
+}
+
+@media only screen and (max-width: 1750px) {
+
+	.ryu, .ryu-angry {
+	width: 50%;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-still-angry, .ryu-throwing-angry, .ryu-cool-angry {
+	width: 50%;
+}
+
 }
 
