@@ -74,6 +74,7 @@ body {
 .hadouken-angry {
 	right: 560px;
 	float: right;
+	-webkit-filter: hue-rotate(90deg)
 	filter: hue-rotate(90deg);
 	-moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
