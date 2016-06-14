@@ -24,6 +24,8 @@ body {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+    -webkit-filter: "FlipH";
+    -webkit-filter: hue-rotate(90deg);
 	filter: hue-rotate(90deg);
 }
 
