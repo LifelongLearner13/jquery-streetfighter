@@ -11,6 +11,18 @@ body {
 	z-index: 1;
 }
 
+.col {
+	width: 38%;
+	margin-left: 0.5%;
+    margin-right: 0.5%;
+	display: inline-block;
+	position: relative;
+}
+
+.middle {
+	width: 18%;
+}
+
 .ryu, .ryu-angry {
 	width: 659px;
 	height: 494px;
@@ -103,19 +115,10 @@ body {
 	float: right;
 }
 
-@media only screen and (max-width: 1750px) {
+@media only screen and (max-width: 1555px) {
 
 .explanation {
-	font-size: .75rem;
-}
-
-.ryu, .ryu-angry {
-	-webkit-transform: scale(0.5);
-}
-
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-still-angry, .ryu-throwing-angry, .ryu-cool-angry {
-	-webkit-transform: scale(0.5);
+	font-size: .85rem;
 }
 
 }
-
